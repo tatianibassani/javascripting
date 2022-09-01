@@ -1,0 +1,14 @@
+function range(start, end, step) {
+  var array = [];
+
+  if (start === undefined || end === undefined || step === undefined || start > end || step <= 0) {
+    return array;
+  }
+
+  for (let i = start; i <= end; i += step) {
+    array.push(i);
+  }
+  return array;
+}
+
+console.log(range(0, 10, 2));
